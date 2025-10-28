@@ -7,6 +7,7 @@ public class Titulo {
     private double mediaavaliacoes;
     private int totalavaliacoes;
     private double somadasnotas;
+    private int duracaoemminutos;
 
 
     public int getTotalavaliacoes(){
@@ -28,7 +29,12 @@ public class Titulo {
     public double getMediaavaliacoes() {
         return mediaavaliacoes;
     }
-//getters
+
+    public int getDuracaoemminutos() {
+        return duracaoemminutos;
+    }
+
+    //getters
 
     //setters
     public void setNome(String nome) {
@@ -51,7 +57,9 @@ public class Titulo {
         this.somadasnotas = somadasnotas;
     }
 
-
+    public void setDuracaoemminutos(int duracaoemminutos) {
+        this.duracaoemminutos = duracaoemminutos;
+    }
 
     public void exibirinformacoes(){
         System.out.println("Nome: "+nome);

@@ -1,4 +1,3 @@
-
 package modelos.hbomax;
 
     public class Serie extends Titulo {
@@ -37,6 +36,11 @@ package modelos.hbomax;
 
         public void setMinutosPorEpisodio(int minutosPorEpisodio) {
             this.minutosPorEpisodio = minutosPorEpisodio;
+        }
+
+        @Override
+        public int getDuracaoemminutos() {
+            return temporadas * episodiosPorTemporada * minutosPorEpisodio;
         }
     }
 

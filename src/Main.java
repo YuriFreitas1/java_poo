@@ -19,6 +19,10 @@ public class Main {
         dexter.setNome("dexter");
         dexter.setAnodelancamento(2017);
         dexter.exibirinformacoes();
+        dexter.setTemporadas(10);
+        dexter.setEpisodiosPorTemporada(10);
+        dexter.setMinutosPorEpisodio(50);
 
+        System.out.println("tempo para maratonar: "+dexter.getDuracaoemminutos());
     }
 }
