@@ -1,6 +1,8 @@
 import modelos.hbomax.Filme;
 import modelos.hbomax.Serie;
 
+import java.util.ArrayList;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -24,5 +26,20 @@ public class Main {
         dexter.setMinutosPorEpisodio(50);
 
         System.out.println("tempo para maratonar: "+dexter.getDuracaoemminutos());
+
+        Filme filmedoyuri = new Filme();
+        filmedoyuri.setNome("Karate Kid");
+        filmedoyuri.setAnodelancamento(2009);
+        filmedoyuri.exibirinformacoes();
+        filmedoyuri.avalia(0);
+        filmedoyuri.avalia(1);
+        filmedoyuri.avalia(2);
+
+
+        ArrayList<Filme> listadefilmes = new ArrayList<>();
+        listadefilmes.add(hbomax);
+        listadefilmes.add(filmedoyuri);
+        System.out.println(listadefilmes.get(0).getNome());
+        System.out.println(listadefilmes.get(0));
     }
 }
